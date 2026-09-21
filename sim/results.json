@@ -1,0 +1,287 @@
+{
+  "seed": 20260921,
+  "depends_on": [
+    "thesis-26-chain-recurrent-vs-hybrid-occult",
+    "thesis-24-reduction-preserving-multichannel-id"
+  ],
+  "title": "Chain-recurrent labels recoverable from multi-channel ranks that survive stiff\u2013sloppy reduction",
+  "problem": "Which chain-recurrent versus hybrid-occult labels remain recoverable when observation is restricted to the multi-channel Fisher ranks that Thesis #24 proved survive a stiff\u2013sloppy reduction?",
+  "constants": {
+    "A": 1.0,
+    "B": 0.5,
+    "C": 0.65,
+    "D": 0.2,
+    "T_star": 0.22222222222222224,
+    "E_star": 0.5617283950617284,
+    "T_ang": 0.38,
+    "E_imm": 0.5617283950617284,
+    "theta_full": [
+      0.8,
+      0.5,
+      1.6,
+      8.0,
+      0.45
+    ],
+    "full_names": [
+      "k_t",
+      "k_e",
+      "a",
+      "b",
+      "h"
+    ],
+    "phi_reduced": [
+      0.8,
+      0.5,
+      0.09000000000000001
+    ],
+    "red_names": [
+      "k_t",
+      "k_e",
+      "kappa"
+    ],
+    "kappa": 0.09000000000000001,
+    "horizon": 40.0,
+    "period_approx": 19.87397479495899,
+    "n_trials": 240,
+    "n_focus": 120,
+    "practical_cut": 0.001,
+    "channel_names": [
+      "L",
+      "G",
+      "Z",
+      "Q",
+      "R",
+      "s_ang",
+      "s_imm"
+    ],
+    "sigma_ch": [
+      0.05,
+      0.05,
+      0.06,
+      0.06,
+      0.05,
+      0.04,
+      0.04
+    ],
+    "feature_dim": 7
+  },
+  "geometry": {
+    "unstable_focus": [
+      0.22222222222222224,
+      0.5617283950617284
+    ],
+    "orbit_n_points": 400,
+    "orbit_min_dist_to_focus": 0.12486646126876956,
+    "orbit_mean": [
+      0.23991900513803655,
+      0.5485435528462435
+    ],
+    "every_trial_hits_guard": true,
+    "n_trials": 240,
+    "n_guard_hits": 240,
+    "guard_counts": {
+      "imm": 120,
+      "ang": 120,
+      "none": 0
+    },
+    "occult_is_three_way_split": false,
+    "occult_split": "two-way (imm vs ang); no no-hit class"
+  },
+  "fisher": {
+    "practical_rank_full": 3,
+    "practical_rank_reduced": 3,
+    "evals_full": [
+      6631.267925842274,
+      2294.3262765769036,
+      142.28335423654676,
+      6.200943355318512e-07,
+      -7.039498214399608e-14
+    ],
+    "evals_reduced": [
+      6612.622028316607,
+      2293.703611921739,
+      47.57390207861408
+    ],
+    "n_surviving_directions": 5,
+    "full_direction_survival": [
+      {
+        "index": 0,
+        "eigenvalue": 6631.267925842274,
+        "rayleigh_reduced": 6631.267921568383,
+        "survives": true,
+        "participation": {
+          "k_t": 0.9645736371504972,
+          "k_e": 0.031146466928788783,
+          "a": 0.001426631897816607,
+          "b": 0.0014266321247015934,
+          "h": 0.0014266318981958643
+        }
+      },
+      {
+        "index": 1,
+        "eigenvalue": 2294.3262765769036,
+        "rayleigh_reduced": 2294.326277605283,
+        "survives": true,
+        "participation": {
+          "k_t": 0.03173825404017977,
+          "k_e": 0.9678385671453706,
+          "a": 0.00014105959522831766,
+          "b": 0.00014105962407623065,
+          "h": 0.00014105959514443142
+        }
+      },
+      {
+        "index": 2,
+        "eigenvalue": 142.28335423654676,
+        "rayleigh_reduced": 142.2817744573859,
+        "survives": true,
+        "participation": {
+          "k_t": 0.0036881088093118175,
+          "k_e": 0.001014965925836829,
+          "a": 0.3317648009004043,
+          "b": 0.33176732345941795,
+          "h": 0.33176480090502936
+        }
+      },
+      {
+        "index": 3,
+        "eigenvalue": 6.200943355318512e-07,
+        "rayleigh_reduced": 4.5487085474315177e-10,
+        "survives": false,
+        "participation": {
+          "k_t": 1.1310491012518602e-14,
+          "k_e": 3.085946107350765e-15,
+          "a": 0.16666750651391624,
+          "b": 0.6666649847918046,
+          "h": 0.166667508694265
+        }
+      },
+      {
+        "index": 4,
+        "eigenvalue": -7.039498214399608e-14,
+        "rayleigh_reduced": 9.902896298013962e-20,
+        "survives": false,
+        "participation": {
+          "k_t": 1.4128946007676566e-23,
+          "k_e": 3.6890042350055574e-24,
+          "a": 0.5000000010926346,
+          "b": 2.371581054008571e-18,
+          "h": 0.49999999890736535
+        }
+      }
+    ],
+    "surviving_full_directions": [
+      {
+        "index": 0,
+        "eigenvalue": 6631.267925842274,
+        "rayleigh_reduced": 6631.267921568383,
+        "survives": true,
+        "participation": {
+          "k_t": 0.9645736371504972,
+          "k_e": 0.031146466928788783,
+          "a": 0.001426631897816607,
+          "b": 0.0014266321247015934,
+          "h": 0.0014266318981958643
+        }
+      },
+      {
+        "index": 1,
+        "eigenvalue": 2294.3262765769036,
+        "rayleigh_reduced": 2294.326277605283,
+        "survives": true,
+        "participation": {
+          "k_t": 0.03173825404017977,
+          "k_e": 0.9678385671453706,
+          "a": 0.00014105959522831766,
+          "b": 0.00014105962407623065,
+          "h": 0.00014105959514443142
+        }
+      },
+      {
+        "index": 2,
+        "eigenvalue": 142.28335423654676,
+        "rayleigh_reduced": 142.2817744573859,
+        "survives": true,
+        "participation": {
+          "k_t": 0.0036881088093118175,
+          "k_e": 0.001014965925836829,
+          "a": 0.3317648009004043,
+          "b": 0.33176732345941795,
+          "h": 0.33176480090502936
+        }
+      }
+    ]
+  },
+  "readers": {
+    "cycle_full": {
+      "accuracy": 0.4041666666666666,
+      "fold_accuracies": [
+        0.3958333333333333,
+        0.4583333333333333,
+        0.4166666666666667,
+        0.375,
+        0.375
+      ],
+      "chance": 0.5,
+      "at_chance": true,
+      "above_chance": false,
+      "mean_holdout_prob_class1": 0.4887064406976176
+    },
+    "cycle_surviving": {
+      "accuracy": 0.39166666666666666,
+      "fold_accuracies": [
+        0.5,
+        0.4375,
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3541666666666667
+      ],
+      "chance": 0.5,
+      "at_chance": true,
+      "above_chance": false,
+      "mean_holdout_prob_class1": 0.4913697870763285
+    },
+    "occult_full": {
+      "accuracy": 1.0,
+      "fold_accuracies": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "chance": 0.5,
+      "at_chance": false,
+      "above_chance": true,
+      "mean_holdout_prob_class1": 0.9876360602881677
+    },
+    "occult_surviving": {
+      "accuracy": 1.0,
+      "fold_accuracies": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "chance": 0.5,
+      "at_chance": false,
+      "above_chance": true,
+      "mean_holdout_prob_class1": 0.987779343332825
+    }
+  },
+  "findings": {
+    "linear_reader_cycle_at_chance": true,
+    "occult_recoverable_under_surviving_ranks": true,
+    "occult_recoverable_under_full": true,
+    "every_trial_hits_guard": true,
+    "occult_not_three_way": true
+  },
+  "honesty": {
+    "collocation_defect_is_not_a_certified_conley_set": true,
+    "reason": "The orbital derivative of the quadratic distance to the focus is not identically non-positive on the periodic orbit; no epsilon-chain is enumerated and no interval enclosure is computed.",
+    "orbit_fraction_positive_orbital_derivative": 0.54,
+    "orbit_mean_orbital_derivative": -2.7408576184173584e-05
+  },
+  "disclaimer": "Research only. Not a medical device, not clinical decision support, not a dose, not a cure. Collocation defect is not a certified Conley set. No document DOI."
+}

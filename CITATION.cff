@@ -1,0 +1,44 @@
+cff-version: 1.2.0
+message: "If you cite this computational research thesis, please use the metadata below. No DOI is minted here; do not invent one."
+type: thesis
+title: "Chain-recurrent labels recoverable from multi-channel ranks that survive stiff–sloppy reduction"
+authors:
+  - family-names: Ogbonna
+    given-names: Kelechi Emeka
+    email: kelechiogbonna300@gmail.com
+    alias: cloudynirvana
+abstract: >-
+  Which chain-recurrent versus hybrid-occult labels remain recoverable when
+  observation is restricted to the multi-channel Fisher ranks that Thesis #24
+  proved survive a stiff–sloppy reduction? On a joint hybrid–smooth toy with
+  an unstable focus, a periodic orbit of period 19.874, and two occult guards,
+  every trial hits a guard, so the occult class is a two-way split. A linear
+  reader sits at chance on the cycle label under both the full channel feature
+  and its projection onto the surviving ranks (hold-out accuracies 0.404 and
+  0.392 against chance 0.5). The occult-guard label remains recoverable from
+  those surviving ranks (hold-out accuracy 1.000). Three practical Fisher
+  directions survive the documented reduction. The orbital check is a
+  collocation defect, not a certified Conley set. Not a medical device. No
+  document DOI.
+keywords:
+  - chain recurrence
+  - hybrid occult modes
+  - multi-channel Fisher rank
+  - stiff-sloppy reduction
+  - label recovery
+  - surviving ranks
+  - research-only
+license: MIT
+date-released: "2026-09-21"
+url: "https://github.com/cloudynirvana/thesis-33-chain-recurrent-under-surviving-ranks"
+repository-code: "https://github.com/cloudynirvana/thesis-33-chain-recurrent-under-surviving-ranks"
+preferred-citation:
+  type: thesis
+  title: "Chain-recurrent labels recoverable from multi-channel ranks that survive stiff–sloppy reduction"
+  authors:
+    - family-names: Ogbonna
+      given-names: Kelechi Emeka
+  year: 2026
+  month: 9
+  url: "https://github.com/cloudynirvana/thesis-33-chain-recurrent-under-surviving-ranks"
+  notes: "Thesis #33. Depends on Thesis #26 and Thesis #24. Computational research. Joint hybrid–smooth toy under surviving ranks, not a clinical result. No document DOI."
